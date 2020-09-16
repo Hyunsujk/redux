@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
+import "./Main.css";
 
-export default class Main extends Component {
-  render() {
-    return <div>Main</div>;
-  }
-}
+const Main = () => {
+  return <main className="Main">Main Stuff</main>;
+};
+
+export default Main;
