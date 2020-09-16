@@ -1,7 +1,8 @@
+import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
+import * as serviceWorker from "./serviceWorker";
 import store from "./store";
 
 const render = () => {
@@ -11,7 +12,7 @@ const render = () => {
 
 render();
 store.subscribe(render);
-registerServiceWorker();
+serviceWorker.register();
 
 function fancyLog() {
   console.log("%c Rendered with ? ??", "background: purple; color: #fff");
