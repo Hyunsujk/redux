@@ -3,6 +3,7 @@ import store from "../store";
 import Header from "../components/Header";
 import _ from "lodash";
 import Chats from "./Chats";
+import "./ChatWindow.css";
 
 const ChatWindow = ({ activeUserId }) => {
   const state = store.getState();
